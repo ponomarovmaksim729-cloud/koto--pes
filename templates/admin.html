@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кабінет продавця</title>
+</head>
+<body>
+    <h1>Кабінет продавця</h1>
+    <a href="/add_product">Додати товар</a> | <a href="/">Головна</a>
+    <ul>
+        {% for product in products %}
+        <li>{{ product.name }} — {{ product.price }} грн</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
